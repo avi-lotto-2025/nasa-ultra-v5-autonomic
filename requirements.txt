@@ -2,7 +2,7 @@ numpy
 pandas
 matplotlib
 colorama
-smtplib
 email
 datetime
 random2
+
