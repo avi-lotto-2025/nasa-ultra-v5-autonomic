@@ -3,5 +3,7 @@ services:
     name: nasa-ultra-v5-autonomic
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python3 NASA_ULTRA_KIRA_AUTONOMIC_FINAL_V3.2.py"
+    buildCommand: "pip install --break-system-packages -r requirements.txt"
+    startCommand: |
+      echo "Starting NASA Ultra system..."
+      python3 NASA_ULTRA_KIRA_AUTONOMIC_FINAL_V3.2.py
